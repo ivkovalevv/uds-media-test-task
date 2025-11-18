@@ -1,0 +1,64 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Euclid Flex";
+  src:
+    url("../../public/assets/fonts/euclid-flex/EuclidFlexMedium.woff2")
+      format("woff2"),
+    url("../../public/assets/fonts/euclid-flex/EuclidFlexMedium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: $grey-color;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include margin-padding-reset;
+  font-family: "Euclid Flex", sans-serif;
+  background-color: $white-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  @include margin-padding-reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  @include margin-padding-reset;
+  list-style: none;
+}
+
+.container {
+  max-width: $container-max-width;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cards-list {
+  margin: 80px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

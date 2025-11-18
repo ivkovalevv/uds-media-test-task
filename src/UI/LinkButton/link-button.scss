@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.button{
+    @include button-base;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
