@@ -6,7 +6,7 @@ import LikeButton from "../../UI/LikeButton/LikeButton";
 import CardInfo from "../CardInfo/CardInfo";
 import CardOptions from "../CardOptions/CardOptions";
 import Rating from "../../UI/Raiting/Raiting";
-import { useFavourite } from "../hooks/useFavourite";
+import { useFavourite } from "../../hooks/useFavourite";
 
 const Card = (props) => {
   const [favourite, setFavorite] = useFavourite(props.id);
