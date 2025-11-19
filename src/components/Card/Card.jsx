@@ -1,4 +1,3 @@
-import { useState } from "react";
 import LinkButton from "../../UI/LinkButton/LinkButton";
 import Stiker from "../../UI/Stiker/Stiker";
 import "./card.scss";
@@ -6,10 +5,24 @@ import LikeButton from "../../UI/LikeButton/LikeButton";
 import CardInfo from "../CardInfo/CardInfo";
 import CardOptions from "../CardOptions/CardOptions";
 import Rating from "../../UI/Raiting/Raiting";
-import { useFavourite } from "../hooks/useFavourite";
+import { useFavourite } from "../../hooks/useFavourite";
+import { useEffect, useRef, useState } from "react";
 
 const Card = (props) => {
   const [favourite, setFavorite] = useFavourite(props.id);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [needsExpand, setNeedsExpand] = useState(false);
+  const descriptionRef = useRef(null);
+
+  useEffect(() => {
+    if (descriptionRef.current) {
+      const lineHeight = parseInt(
+        getComputedStyle(descriptionRef.current).lineHeight
+      );
+      const maxHeight = lineHeight * 3;
+      setNeedsExpand(descriptionRef.current.scrollHeight > maxHeight);
+    }
+  }, [props.description]);
 
   return (
     <li className="list-item card">
@@ -22,7 +35,23 @@ const Card = (props) => {
           </div>
           {props.description && (
             <div className="card__image-content-description-wrapper">
-              <p className="card__description">{props.description}</p>
+              <p
+                ref={descriptionRef}
+                className={`card__description ${isExpanded ? "expanded" : ""}`}
+              >
+                {props.description}
+              </p>
+              {needsExpand && (
+                <button
+                  className="card__show-more"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsExpanded(!isExpanded);
+                  }}
+                >
+                  {isExpanded ? "Свернуть" : "Показать полностью"}
+                </button>
+              )}
             </div>
           )}
         </div>

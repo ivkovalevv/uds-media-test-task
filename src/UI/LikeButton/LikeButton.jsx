@@ -1,8 +1,14 @@
 import "./like-button.scss";
 
 const LikeButton = ({ active = false, handleClick }) => {
+  const tooltipText = active ? "Убрать из избранного" : "Добавить в избранное";
+
   return (
-    <button className="like-button" onClick={() => handleClick(!active)}>
+    <button
+      className="like-button"
+      onClick={() => handleClick(!active)}
+      data-tooltip={tooltipText}
+    >
       <svg
         className={`like-social-icon ${active ? "active" : ""}`}
         viewBox="0 0 26 24"

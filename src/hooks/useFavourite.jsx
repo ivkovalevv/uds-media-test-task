@@ -4,12 +4,16 @@ export const useFavourite = (cardId) => {
   const STORAGE_KEY = "favourite_cards";
 
   const [isFavourite, setIsFavourite] = useState(() => {
-    const favourites = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[1]");
+    const favourites = JSON.parse(
+      localStorage.getItem(STORAGE_KEY) || "[1, 4, 6]"
+    );
     return favourites.includes(cardId);
   });
 
   useEffect(() => {
-    const favourites = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[1]");
+    const favourites = JSON.parse(
+      localStorage.getItem(STORAGE_KEY) || "[1, 4, 6]"
+    );
 
     if (isFavourite) {
       if (!favourites.includes(cardId)) {
