@@ -42,13 +42,13 @@ const Card = (props) => {
             className={"card__button"}
           />
         )}
+        <CardInfo
+          address={props.address}
+          distance={props.distance}
+          metro={props.metro}
+        />
+        <Rating rating={props.rating} />
       </div>
-      <CardInfo
-        address={props.address}
-        distance={props.distance}
-        metro={props.metro}
-      />
-      <Rating rating={props.rating} />
     </li>
   );
 };
