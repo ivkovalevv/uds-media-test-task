@@ -9,7 +9,9 @@ const Stiker = () => {
         width="20"
         height="22"
       >
-        <use href="../../assets/images/svg/sprite.svg#home-icon"></use>
+        <use
+          href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#home-icon`}
+        ></use>
       </svg>
     </div>
   );

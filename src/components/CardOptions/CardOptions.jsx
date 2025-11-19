@@ -16,7 +16,9 @@ const CardOptions = () => {
           height="21"
           aria-hidden="true"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#image-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#image-icon`}
+          ></use>
         </svg>
       </button>
 
@@ -33,7 +35,9 @@ const CardOptions = () => {
           height="21"
           aria-hidden="true"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#review-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#review-icon`}
+          ></use>
         </svg>
       </button>
 
@@ -50,7 +54,9 @@ const CardOptions = () => {
           height="16"
           aria-hidden="true"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#video-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#video-icon`}
+          ></use>
         </svg>
       </button>
     </div>

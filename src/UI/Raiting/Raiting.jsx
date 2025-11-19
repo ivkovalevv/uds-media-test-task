@@ -13,7 +13,9 @@ const Rating = ({ rating = 0, maxStars = 5, showValue = true }) => {
           width="15"
           height="14"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#star-full-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#star-full-icon`}
+          ></use>
         </svg>
       );
     } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
@@ -25,7 +27,9 @@ const Rating = ({ rating = 0, maxStars = 5, showValue = true }) => {
           width="15"
           height="14"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#star-half-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#star-half-icon`}
+          ></use>
         </svg>
       );
     } else {
@@ -37,7 +41,9 @@ const Rating = ({ rating = 0, maxStars = 5, showValue = true }) => {
           width="15"
           height="14"
         >
-          <use href="../../../../assets/images/svg/sprite.svg#star-empty-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#star-empty-icon`}
+          ></use>
         </svg>
       );
     }

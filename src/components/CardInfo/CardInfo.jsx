@@ -10,7 +10,9 @@ const CardInfo = ({ address, distance, metro }) => {
           width="17"
           height="21"
         >
-          <use href="../../assets/images/svg/sprite.svg#location-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#location-icon`}
+          ></use>
         </svg>
         <span className="card__info-text">{address}</span>
       </li>
@@ -22,7 +24,9 @@ const CardInfo = ({ address, distance, metro }) => {
           width="16"
           height="17"
         >
-          <use href="../../assets/images/svg/sprite.svg#route-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#route-icon`}
+          ></use>
         </svg>
         <span className="card__info-text">{distance}</span>
       </li>
@@ -34,7 +38,9 @@ const CardInfo = ({ address, distance, metro }) => {
           width="22"
           height="14"
         >
-          <use href="../../assets/images/svg/sprite.svg#metro-icon"></use>
+          <use
+            href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#metro-icon`}
+          ></use>
         </svg>
         <span className="card__info-text card__info-text--metro">{`${metro.name},  `}</span>
         <span className="card__info-text">{metro.time}</span>

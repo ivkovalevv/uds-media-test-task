@@ -13,7 +13,10 @@ const Card = (props) => {
   return (
     <li className="list-item card">
       <div className="card__image">
-        <img src={props.image} alt={props.title} />
+        <img
+          src={`${process.env.PUBLIC_URL}${props.image}`}
+          alt={props.title}
+        />
         <div className="card__image-content">
           <div className="card__image-content-header">
             <Stiker />

@@ -11,7 +11,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/dom-panteleeva.png",
+      "image": "/assets/images/dom-panteleeva.png",
       "link": ""
     },
     {
@@ -25,7 +25,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/moskva-v-kino.png",
+      "image": "/assets/images/moskva-v-kino.png",
       "link": "https://some-link.com"
     },
     {
@@ -39,7 +39,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/usadba-kurlkina.png",
+      "image": "/assets/images/usadba-kurlkina.png",
       "link": ""
     },
     {
@@ -53,7 +53,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/usadba-sovremennaya.png",
+      "image": "/assets/images/usadba-sovremennaya.png",
       "link": ""
     },
     {
@@ -67,7 +67,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/dom-panteleeva-1.png",
+      "image": "/assets/images/dom-panteleeva-1.png",
       "link": ""
     },
     {
@@ -81,7 +81,7 @@
         "time": "3 мин"
       },
       "rating": 4.56,
-      "image": "../../assets/images/dom-panteleeva-2.png",
+      "image": "/assets/images/dom-panteleeva-2.png",
       "link": ""
     }
   ]

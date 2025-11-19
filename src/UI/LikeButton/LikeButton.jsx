@@ -9,7 +9,9 @@ const LikeButton = ({ active = false, handleClick }) => {
         width="26"
         height="24"
       >
-        <use href="../../../../assets/images/svg/sprite.svg#like-icon"></use>
+        <use
+          href={`${process.env.PUBLIC_URL}/assets/images/svg/sprite.svg#like-icon`}
+        ></use>
       </svg>
     </button>
   );
