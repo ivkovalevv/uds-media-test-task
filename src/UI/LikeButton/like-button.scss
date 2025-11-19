@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.like-button{
+    @include margin-padding-reset;
+    border: none;
+    background-color: transparent;
+}
+
+.like-social-icon{
+    cursor: pointer;
+    width: 24px;
+    height: 22px;
+}
+
+.like-social-icon.active{
+    --like-stroke: #{$primary-color};
+    --like-fill: #{$primary-color};
+    animation: scaleIn .3s ease;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
