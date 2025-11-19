@@ -1,4 +1,3 @@
-import { useState } from "react";
 import LinkButton from "../../UI/LinkButton/LinkButton";
 import Stiker from "../../UI/Stiker/Stiker";
 import "./card.scss";
