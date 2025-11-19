@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/uds-media-test-task/static/css/main.7401b647.css",
+    "main.js": "/uds-media-test-task/static/js/main.2154a25a.js",
+    "static/media/EuclidFlexMedium.woff": "/uds-media-test-task/static/media/EuclidFlexMedium.9156b5bdf47358af82f9.woff",
+    "static/media/EuclidFlexMedium.woff2": "/uds-media-test-task/static/media/EuclidFlexMedium.c2b6bc54c79fd778904f.woff2",
+    "index.html": "/uds-media-test-task/index.html",
+    "main.7401b647.css.map": "/uds-media-test-task/static/css/main.7401b647.css.map",
+    "main.2154a25a.js.map": "/uds-media-test-task/static/js/main.2154a25a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7401b647.css",
+    "static/js/main.2154a25a.js"
+  ]
+}
